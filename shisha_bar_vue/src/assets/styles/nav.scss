@@ -1,0 +1,45 @@
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px 0;
+    width: 100%;
+    height: 100%;
+    top: 0; /* Align to the bottom of the header */
+    z-index: 1;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        font-weight: bold;
+
+        &:hover {
+            background-color: #555;
+        }
+
+        &.router-link-exact-active {
+            color: #42b983;
+          }
+    }
+
+    #logout-button {
+        background-color: #f44336;
+        color: white;
+        border: none;
+        padding: 7px 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 80px; // Ensures consistent height with the nav items
+    
+        &:hover {
+          background-color: #d32f2f;
+        }
+    }
+
+}
+

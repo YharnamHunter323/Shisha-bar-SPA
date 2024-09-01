@@ -1,0 +1,35 @@
+// Base styles
+$body-font-family: Arial, sans-serif;
+$body-margin: 0;
+$body-padding: 0;
+$body-min-height: 100vh;
+
+// Header styles
+$header-bg-color: #333;
+$header-color: #fff;
+$header-padding-top: 20px;
+$header-text-align: center;
+$header-position: relative;
+
+// Shared components
+body {
+    font-family: $body-font-family;
+    margin: $body-margin;
+    padding: $body-padding;
+    min-height: $body-min-height;
+    height: 100%;
+}
+
+header {
+    background-color: $header-bg-color;
+    color: $header-color;
+    padding-top: $header-padding-top;
+    text-align: $header-text-align;
+    position: $header-position;
+    height: 150px;
+}
+
+main{
+    flex: 1; /* Main content fills the remaining space */
+    background-color: #f3f3f3;
+}

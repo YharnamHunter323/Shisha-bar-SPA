@@ -1,0 +1,112 @@
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+    padding: 0;
+}
+
+.contact-details-container {
+    align-self: flex-start;
+    display: flex;
+    padding: 70px;
+    width: 50%;
+    justify-content: center;
+
+    .contact-section {
+        text-align: center;
+        max-width: 400px;
+        width: 100%;
+
+        .address-working-hours {
+            display: flex; 
+            justify-content: center; 
+            flex-wrap: wrap;
+
+            .contact-address,
+            .business-hours {
+                padding-left: 10px;
+                width: calc(50% - 10px); /* Set width for each section */
+            }
+        }
+
+        .social-icons {
+            text-align: center;
+            margin-bottom: 20px;
+
+            a {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                margin-right: 10px; /* Adjust margin as needed */
+                background-size: cover;
+            }
+
+            .icon-facebook {
+                background-image: url('~@/assets/images/facebook-logo.png'); /* Replace with your Facebook icon image */
+            }
+
+            .icon-instagram {
+                background-image: url('~@/assets/images/instagram-logo.png'); /* Replace with your Instagram icon image */
+            }
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Align vertically */
+            align-items: center; /* Align horizontally */
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #fff;
+            margin-top: 20px;
+            box-sizing: border-box; /* Include padding and border in width calculation */
+            //background-image: url('~@/assets/images/home_image.jpg');
+
+            h3 {
+                margin-top: 0;
+            }
+
+            form {
+                width: 100%; 
+                max-width: 300px; 
+
+                input,
+                textarea,
+                button {
+                    margin-bottom: 15px;
+                    padding: 10px;
+                    border-radius: 3px;
+                    border: 1px solid #ccc;
+                    box-sizing: border-box; 
+                    width: 100%;
+                }
+
+                textarea {
+                    resize: vertical; 
+                    max-height: 90px; 
+                }
+
+                button {
+                    background-color: #333;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.map-container {
+    width: 70%;
+
+    .map-section {
+        align-self: flex-start;
+        float: left;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+}
